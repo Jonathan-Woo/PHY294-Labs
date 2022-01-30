@@ -1,0 +1,11 @@
+The datafile names are formatted as follows:
+
+[Angle swept]-[Voltage]-[Bulb Current at End]-[Gain (Only if 30 Degree Trial)]-[Trial Number]
+
+For example:
+30-4V-0.375A-g100_Trial1
+Means that the data was collected for a 30 degree sweep, at 4V bulb voltage and a gain setting of 100. This is the first trial for this voltage setting, and the bulb current at the end of the measurement read 0.375A. Note that the bulb current flucuates in the last digit significnalty, and only really the first two hold weight. This should be accounted for in your uncertainty calculations. 
+
+Additionally, the integrated area under the curve will have to be calculated using Riemann sums. You may want to smooth the data before integrating, using any method you can reasonably justify (I expect to see this justification). Remember to account for delimiting the data. Finally you may want to change the limits of integration suggested from 10 to 26 degrees, to a more relevant range based on the central observed peak in the data.
+
+The images provided [X]V Bulb show the output from the bulb at a set voltage [X].

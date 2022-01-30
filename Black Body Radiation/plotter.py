@@ -1,0 +1,1 @@
+data=open("BlackbodyRadiationData1/30-4V-0.372A-g10_Trial1.txt")
